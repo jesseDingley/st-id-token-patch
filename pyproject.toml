@@ -8,3 +8,6 @@ version = "0.1"
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.package-data]
+"" = ["src/patch.pth"]
