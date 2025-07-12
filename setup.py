@@ -7,6 +7,7 @@ class PostInstallCommand(install):
     """Post-installation to patch streamlit."""
     def run(self):
         import patch  # this must import and run the patch function
+        print("hello")
         super().run()
 
 setup(
