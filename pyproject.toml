@@ -9,5 +9,8 @@ version = "0.1"
 [tool.setuptools]
 include-package-data = true
 
-[tool.setuptools.data-files]
-"" = ["src/patch.pth"]
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["patch.pth"]
