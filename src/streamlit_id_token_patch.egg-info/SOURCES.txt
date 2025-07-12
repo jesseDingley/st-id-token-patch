@@ -1,7 +1,6 @@
 MANIFEST.in
 README.md
 pyproject.toml
-src/__init__.py
 src/patch.pth
 src/patch.py
 src/streamlit_id_token_patch.egg-info/PKG-INFO
