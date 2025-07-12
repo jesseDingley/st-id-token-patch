@@ -10,4 +10,4 @@ version = "0.1"
 where = ["src"]
 
 [tool.setuptools.package-data]
-mypkg = ["patch.pth"]
+patch = ["patch.pth"]
