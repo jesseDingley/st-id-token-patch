@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=60", "setuptools-scm>=8.0"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,10 @@ name = "streamlit_id_token_patch"
 version = "0.1"
 
 [tool.setuptools]
-include-package-data = true
+# Tell setuptools where your .py module is located
+py-modules = ["patch"]
+package-dir = {"" = "src"}
 
-[tool.setuptools.package-data]
-"*" = ["src/patch.pth"]
+[tool.setuptools.data-files]
+# Install patch.pth directly into site-packages
+"" = ["src/patch.pth"]
