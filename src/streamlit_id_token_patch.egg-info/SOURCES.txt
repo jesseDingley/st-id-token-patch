@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/patch/__init__.py
+src/patch/patch.pth
+src/patch/patch.py
+src/streamlit_id_token_patch.egg-info/PKG-INFO
+src/streamlit_id_token_patch.egg-info/SOURCES.txt
+src/streamlit_id_token_patch.egg-info/dependency_links.txt
+src/streamlit_id_token_patch.egg-info/top_level.txt
