@@ -8,10 +8,10 @@ build-backend = "hatchling.build"
 
 [tool.coverage.run]
 branch = true
-source = "streamlit-id-token-patch"
+source = "streamlit_id_token_patch"
 
 [tool.hatch.build.hooks.autorun]
 dependencies = ["hatch-autorun"]
 code = """
-import streamlit-id-token-patch
+import streamlit_id_token_patch
 """
