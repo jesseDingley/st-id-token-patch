@@ -1,16 +1,17 @@
-[build-system]
-requires = ["setuptools>=61"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "streamlit_id_token_patch"
+name = "st-id-token-patch"
 version = "0.1"
 
-[tool.setuptools]
-# Tell setuptools where your .py module is located
-py-modules = ["patch"]
-package-dir = {"" = "src"}
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.setuptools.data-files]
-# Install patch.pth directly into site-packages
-"" = ["src/patch.pth"]
+[tool.coverage.run]
+branch = true
+source = "st-id-token-patch"
+
+[tool.hatch.build.hooks.autorun]
+dependencies = ["hatch-autorun"]
+code = """
+import st-id-token-patch
+"""
