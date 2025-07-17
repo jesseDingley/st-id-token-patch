@@ -1,5 +1,5 @@
 [project]
-name = "st-id-token-patch"
+name = "streamlit-id-token-patch"
 version = "0.1"
 
 [build-system]
@@ -8,10 +8,10 @@ build-backend = "hatchling.build"
 
 [tool.coverage.run]
 branch = true
-source = "st-id-token-patch"
+source = "streamlit-id-token-patch"
 
 [tool.hatch.build.hooks.autorun]
 dependencies = ["hatch-autorun"]
 code = """
-import st-id-token-patch
+import streamlit-id-token-patch
 """
