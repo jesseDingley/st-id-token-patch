@@ -23,7 +23,8 @@ def mod_authcallbackhandler() -> None:
     replacement = (
         'user = cast("dict[str, Any]", token.get("userinfo"))\n'
         '        user.update({\n'
-        '            "id_token": token["access_token"]\n'
+        '            "access_token": token["access_token"]\n'
+        '            "id_token": token["id_token"]\n'
         '        })\n'
     )
 
