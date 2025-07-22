@@ -6,10 +6,14 @@ On installation, this patch will make a modifiction to `streamlit/web/server/oau
 
 ## Installation and Usage
 
-To install and execute the patch, run `pip install .`
+To install and execute the patch, run 
 
-To install as an external package, add 
+```
+pip install .
+```
 
-```streamlit-id-token-patch @ git+https://github.com/jesseDingley/streamlit-id-token-patch.git@main#egg=streamlit-id-token-patch``` 
+To install as an external package, add the following to your `requirements.txt`:
 
-to your `requirements.txt` 
+```
+streamlit-id-token-patch @ git+https://github.com/jesseDingley/streamlit-id-token-patch.git@main#egg=streamlit-id-token-patch
+``` 
